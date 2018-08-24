@@ -1,0 +1,58 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav  
+  #drawer  
+  [opened]="!small"  
+  class="sidenav mat-elevation-z8"
+  fixedInViewport="true"
+  [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+  [mode]="(isHandset$ | async) ? 'over' : 'side'" >
+    <mat-toolbar class="white"><img  src="assets/logo.png" width="80%" style="margin:auto"></mat-toolbar>
+    <mat-nav-list>
+      <a class="sidenavelement" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/" mat-list-item href="#"><mat-icon>dashboard</mat-icon> &nbsp; Dashboard</a>
+      <a class="sidenavelement" routerLinkActive="active-link" routerLink="/user" mat-list-item href="#"><mat-icon>person</mat-icon> &nbsp; User Profile</a>
+      <a class="sidenavelement" routerLinkActive="active-link" routerLink="/table" mat-list-item href="#"><mat-icon>table_chart</mat-icon> &nbsp; Table List</a>
+      <a class="sidenavelement" routerLinkActive="active-link" routerLink="/typo" mat-list-item href="#"><mat-icon>text_fields</mat-icon> &nbsp; Typography</a>
+      <a class="sidenavelement" routerLinkActive="active-link" routerLink="/icons" mat-list-item href="#"><mat-icon>insert_emoticon</mat-icon> &nbsp; Icons</a>
+      <a class="sidenavelement" routerLinkActive="active-link" routerLink="/maps" mat-list-item href="#"><mat-icon>map</mat-icon> &nbsp; Maps</a>
+      <a class="sidenavelement" routerLinkActive="active-link" routerLink="/notify" mat-list-item href="#"><mat-icon>notification_important</mat-icon> &nbsp; Notifications</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="grey lighten-2" style="min-height:90px">
+      <button
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="drawer.toggle()" >
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+      <span>Material Dashboard</span>
+      <span class="example-fill-remaining-space"></span>  
+      
+      <span class="example-fill-remaining-space"></span>  
+      <p class="hide-on-med-and-down" style="margin-top:-10px">
+      <mat-form-field appearance="legacy" style="max-height:50px; padding-bottom: 0px; margin-bottom: 0px !important; margin-top: -10px">
+        <mat-label>Search</mat-label>
+        <input  matInput >
+        <mat-icon  matSuffix>search</mat-icon>        
+      </mat-form-field>
+    </p>
+    <span class="example-fill-remaining-space"></span>  
+      <button mat-icon-button color="primary">
+        <mat-icon>dashboard</mat-icon>
+       </button>
+      <button mat-icon-button color="primary"  matBadge="8" matBadgePosition="after" matBadgeColor="accent">
+        <i style="font-size:24px " class="fas fa-bell"></i>
+       </button> &nbsp;
+     
+       <button mat-icon-button color="primary" [matMenuTriggerFor]="menu">
+        <i style="font-size:24px " class="fas fa-user"></i>
+       </button>
+       <mat-menu #menu="matMenu">
+          <button mat-menu-item>Change Password</button>
+          <button mat-menu-item>Sign Out</button>
+        </mat-menu>   
+    </mat-toolbar>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

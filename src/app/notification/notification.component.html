@@ -1,0 +1,151 @@
+<div class="row marleft">
+    <div class="col m12 s12" style="margin-top:40px">
+        <div class="col m12 s12 white mat-elevation-z4" style="border-radius:4px">
+          <div class="col m12 s12 mat-elevation-z8" style="margin-top:-20px;border-radius:4px;  background: linear-gradient(60deg,#ab47bc,#512f6f); padding:10px">
+            <h5 class="white-text">Material Dashboard Heading</h5>
+            <h6 class="white-text">Created using Roboto Font Family</h6>
+          </div>
+          <div class="col m6 s12" style="border-radius:4px; margin-top: 10px">
+              <div class="row white-text" style="padding:20px; background: linear-gradient(60deg,#66bb6a,#43a047);border-radius:4px">
+                  This is a plain notification                
+              </div >
+            <div class="row white-text" *ngIf="f.h" style="padding:20px; background: linear-gradient(60deg,#ab47bc,#512f6f);border-radius:4px">
+                <div class="col m11 s8">
+                    <p>This is a plain notification </p>
+                </div>
+                <div class="col m1 s2" style="margin-top:10px">
+                    <button mat-icon-button class="white-text" (click)="closenoti('h')">
+                        <mat-icon aria-label="Example icon-button with a heart icon">close</mat-icon>
+                      </button>
+                </div>
+            </div>
+            <div class="row white-text" *ngIf="f.g" style="padding:10px; background: linear-gradient(60deg,#26c6da,#00acc1);border-radius:4px">
+                <div class="col m1 s2">
+                   <p> <mat-icon class="white-text">home</mat-icon></p>
+                </div>
+                <div class="col m10 s8">
+                    <p>This is a plain notification </p>
+                </div>
+                <div class="col m1 s2" style="margin-top:10px">
+                    <button mat-icon-button class="white-text" (click)="closenoti('g')">
+                        <mat-icon aria-label="Example icon-button with a heart icon">close</mat-icon>
+                      </button>
+                </div>
+              </div>
+              <div class="row" *ngIf="f.f" style="padding:10px; background: linear-gradient(60deg,#26c6da,#00acc1);border-radius:4px">
+                  <div class="col m1 s2" style="margin-top:20px">
+                      <mat-icon class="white-text">home</mat-icon>
+                  </div>
+                  <div class="col m10 s8 white-text">
+                      This is a plain notification  This is a plain notification  This is a plain notification  This is a plain notification  
+                      This is a plain notification  This is a plain notification  This is a plain notification 
+                  </div>
+                  <div class="col m1 s2" style="margin-top:10px">
+                      <button mat-icon-button class="white-text" (click)="closenoti('f')">
+                          <mat-icon aria-label="Example icon-button with a heart icon">close</mat-icon>
+                        </button>
+                  </div>
+                </div>     
+              <p class="white-text" style="padding:20px; ">
+                        
+                
+                </p>
+            
+          </div>
+          <div class="col m6 s12" style="border-radius:4px; margin-top: 10px;">
+              <div class="col m12 s12">
+            <div class="row white-text" *ngIf="f.a" style=" background: linear-gradient(60deg,#ab47bc,#512f6f);border-radius:4px">
+                <div class="col m11 s8">
+                    <p>INFO - This is a regular notification</p>
+                </div>
+                <div class="col m1 s2" style="margin-top:10px">
+                    <button mat-icon-button class="white-text" (click)="closenoti('a')">
+                        <mat-icon aria-label="Example icon-button with a heart icon">close</mat-icon>
+                      </button>
+                </div>
+            </div>
+            <div class="row white-text" *ngIf="f.b" style="background: linear-gradient(60deg,#66bb6a,#43a047);border-radius:4px">
+                <div class="col m11 s8">
+                    <p>SUCCESS - This is a regular notification 
+                      </p>
+                </div>
+                <div class="col m1 s2" style="margin-top:10px">
+                    <button mat-icon-button class="white-text" (click)="closenoti('b')">
+                        <mat-icon aria-label="Example icon-button with a heart icon">close</mat-icon>
+                      </button>
+                </div>
+            </div>
+            <div class="row white-text"  *ngIf="f.c" style=" background: linear-gradient(60deg,#ffa726,#fb8c00);border-radius:4px">
+                <div class="col m11 s8">
+                    <p>WARNING - This is a regular notification 
+                      </p>
+                </div>
+                <div class="col m1 s2" style="margin-top:10px">
+                    <button mat-icon-button class="white-text" (click)="closenoti('c')">
+                        <mat-icon aria-label="Example icon-button with a heart icon">close</mat-icon>
+                      </button>
+                </div>
+            </div>
+            <div class="row white-text"  *ngIf="f.d" style=" background: linear-gradient(60deg,#ef5350,#e53935);border-radius:4px">
+                <div class="col m11 s8">
+                    <p>DANGER - This is a regular notification  </p>
+                </div>
+                <div class="col m1 s2" style="margin-top:10px">
+                    <button mat-icon-button class="white-text" (click)="closenoti('d')">
+                        <mat-icon aria-label="Example icon-button with a heart icon">close</mat-icon>
+                      </button>
+                </div>
+            </div>
+            <div class="row white-text" *ngIf="f.e" style=" background: linear-gradient(60deg,#ab47bc,#512f6f);border-radius:4px">
+                <div class="col m11 s8">
+                    <p>PRIMARY - This is a regular notification   </p>
+                </div>
+                <div class="col m1 s2" style="margin-top:10px">
+                    <button mat-icon-button class="white-text" (click)="closenoti('e')">
+                        <mat-icon aria-label="Example icon-button with a heart icon">close</mat-icon>
+                      </button>
+                </div>
+            </div>
+            
+          
+          </div>
+          </div>
+     
+          </div>
+          <div class="col m12 s12 white mat-elevation-z4" style="border-radius:4px; margin-top:40px">
+              <div class="col m12 s12 mat-elevation-z8" style="margin-top:-20px;border-radius:4px;  background: linear-gradient(60deg,#ab47bc,#512f6f); padding:10px">
+                <h5 class="white-text">Notifications Places
+                  </h5>
+                <h6 class="white-text">Click to view notifications
+
+                  </h6>
+              </div>
+              <div class="row center" >
+                  <div class="col m4 s4" style="margin-top:40px">
+                      <button mat-raised-button color="primary" (click)="openSnackBar('start', 'top')">Top Left</button>
+                    </div>
+                     
+                    <div class="col m4 s4" style="margin-top:40px">
+                        <button mat-raised-button color="primary" (click)="openSnackBar('center', 'top')">Top center</button>
+                      </div>
+            
+                      <div class="col m4 s4" style="margin-top:40px">
+                          <button mat-raised-button color="primary" (click)="openSnackBar('end', 'top')">Top right</button>
+                        </div>
+                        <div class="col m4 s4" style="margin-top:40px">
+                            <button mat-raised-button color="primary" (click)="openSnackBar('start', 'bottom')">Bottom Left</button>
+                          </div>
+                           
+                          <div class="col m4 s4" style="margin-top:40px">
+                              <button mat-raised-button color="primary" (click)="openSnackBar('center', 'bottom')">Bottom center</button>
+                            </div>
+                  
+                            <div class="col m4 s4" style="margin-top:40px">
+                                <button mat-raised-button color="primary" (click)="openSnackBar('end', 'bottom')">Bottom right</button>
+                              </div>
+                    </div>  
+</div>
+        </div>
+     
+          </div>
+        

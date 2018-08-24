@@ -1,0 +1,55 @@
+.sidenav-container {
+  height: 100%;
+}
+.example-form-field {
+  width: 200px;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+}
+.mat-nav-list .mat-list-item{
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+.sidenavelement{
+  padding-left: 20px
+}
+::ng-deep .highlightmenu{
+  background: linear-gradient(60deg,#ab47bc,#512f6f);
+    
+}
+.active-link{
+  background: linear-gradient(60deg,#ab47bc,#512f6f);
+  color: white;
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+}
+
+.mat-list-option.mat-list-item-focus, .mat-list-option:hover, .mat-nav-list .mat-list-item.mat-list-item-focus, .mat-nav-list .mat-list-item:hover {
+  background: linear-gradient(60deg,#ab47bc,#512f6f);
+    color: white;
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+}
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.mat-drawer-container {
+    overflow: visible;
+}

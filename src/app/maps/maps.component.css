@@ -1,0 +1,14 @@
+@media only screen and (min-width: 600px) {
+    ::ng-deep .marleft{
+        margin-left:200px
+    }    
+}
+
+.table-head-fix{
+    font-size:16px;
+    color: #fb8c00;
+}
+agm-map {
+    height: 600px;
+    width: 100%
+  }

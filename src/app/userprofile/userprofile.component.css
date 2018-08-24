@@ -1,0 +1,14 @@
+@media only screen and (min-width: 600px) {
+    ::ng-deep .marleft{
+        margin-left:200px
+    }    
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
