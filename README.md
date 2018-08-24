@@ -24,4 +24,4 @@ https://ampersandacademy.com/angular-material-6-theme/
 
 # Preview
 
-<img src="" width="600px" height="">
+<img src="dashboard.png" width="600px" height="">
