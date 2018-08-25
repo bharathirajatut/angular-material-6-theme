@@ -34,7 +34,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
   ],
   imports: [
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDKQL3l9tFfi2yyki9JPDIqKy7meDt70qg'
+      apiKey: 'YOUR_GOOGLE_MAP_API_KEY'
     }),    
     MatTableModule,
     MatSnackBarModule,
