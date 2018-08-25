@@ -14,7 +14,10 @@ Step2: Execute the below command.
 cd angular-material-6-theme
 npm install
 ```
-Step3: Run 
+
+Step3: In app.module.ts file, replace YOUR_GOOGLE_MAP_API_KEY with actual google map api key.
+
+Step4: Run 
 ```
 ng serve --open
 ```
