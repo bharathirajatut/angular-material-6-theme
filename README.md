@@ -16,7 +16,7 @@ npm install
 ```
 Step3: Run 
 ```
-ng server --open
+ng serve --open
 ```
 
 # Demo
